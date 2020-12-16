@@ -15,7 +15,7 @@ export const Navbar = () => {
     
         <div className="menu-icon" onClick={handleClick}>
           <small>{clicked ? "close" : "menu"}</small>
-          <i className={clicked ? "fa fa-times" : "fa fa-bars"}></i>
+          <i className={clicked ? "burger fa fa-times" : "burger fa fa-bars"}></i>
         </div>
         <ul className={clicked ? "navbar__navbar active" : "navbar__navbar"}>
           {MenuItems.map((item, index) => {
