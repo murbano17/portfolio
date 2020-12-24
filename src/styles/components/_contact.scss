@@ -1,27 +1,10 @@
-.contact__contact-container {
-  margin-top: 60px;
-  height: 100vh;
-  position: relative;
-
+.contact__title h1 {
+  line-height: 5rem;
 }
-.contact__contact-info {
-  padding-top: 10%;
-  padding-bottom: 50px;
 
-
-  h1 {
-    padding: 20px 20px 100px 20px;
-
-    color: $black;
-    font-size: 5rem;
-    text-transform: lowercase;
-    font-weight: 800;
-    line-height: 5rem;
-  }
-}
 .contact__contact-box {
   margin-top: 40px;
-  width: 100vw;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -32,7 +15,7 @@
   }
 }
 
-.contact__contact-box .user-box {
+.user-box {
   position: relative;
 }
 
@@ -111,63 +94,38 @@
     border: 1px solid $black;
   }
 }
-.contact__error-message {
-  margin-bottom: 40px;
-  margin-left: 40px;
-  align-self: flex-start;
-  border-bottom: 2px solid #ed4337;
-  background-color: $white;
-  font-size: 0.9rem;
-  width: 60%;
-  border-radius: 1px;
-  color: #ed4337;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 
-  p {
-    display: inline;
-    color: #ed4337;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-  }
+.oaerror {
+  background-color: white;
+  border: 1px solid white;
+  border-top-width: 1px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  padding-bottom: 10px;
 }
-.contact__success-message {
-  margin-bottom: 40px;
-  margin-left: 40px;
-  align-self: flex-start;
-  border-bottom: 2px solid #4bca81;
-  background-color: $white;
-  font-size: 0.9rem;
-  width: 60%;
-  border-radius: 1px;
-  color: #4bca81;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 
-  p {
-    display: inline;
-    color: #4bca81;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-  }
+.danger {
+  border-bottom-color: #d9534f;
+  color: #d9534f;
+}
+
+.danger strong {
+  color: #d9534f;
+}
+
+.success {
+  border-bottom-color: #4bca81;
+  color: #4bca81;
+}
+.success strong {
+  color: #4bca81;
 }
 
 @media only screen and (min-width: 600px) {
-  .contact__contact-info {
-    padding: 80px 50px 20px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h1 {
-      align-self: flex-start;
-    }
-  }
-
   .contact__contact-box {
-    padding: 0px 0px 30px 30px;
-    width: 60%;
+    margin-bottom: 70px;
+    form {
+      width: 60%;
+    }
   }
 }

@@ -22,7 +22,7 @@ const Contact = () => {
     if (validationForm) {
       emailjs
         .send(
-          "default_service",
+          "service_x0ptjnv",
           "template_hy282n8",
           contact,
           "user_uscaZdUJEnKPLtEuEruZI"
@@ -59,25 +59,25 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <div className="contact__contact-container">
-        <small className="home__home-title">CONTACT</small>
+    <div className="page__container">
+      <small className="page__title-small">contact</small>
 
-        <div className="contact__contact-info">
-          <h1> Get in touch. </h1>
+      <div className="page__info contact__title">
+        <h1 className="animate__animated animate__pulse"> Get in touch. </h1>
 
+        <div className=" page__info-container ">
           <div className="contact__contact-box">
-            {messageError.length > 0 ? (
-              <div className="contact__error-message">
-                <p>{messageError}</p>
-              </div>
-            ) : null}
-            {successMessage.length > 0 ? (
-              <div className="contact__success-message">
-                <p> {successMessage}</p>
-              </div>
-            ) : null}
             <form onSubmit={handleSubmit}>
+              {messageError.length > 0 ? (
+                <div className="oaerror danger">
+                  <strong>Error</strong> - {messageError}
+                </div>
+              ) : null}
+              {successMessage.length > 0 ? (
+                <div className="oaerror success">
+                  <strong>Nice</strong> {successMessage}
+                </div>
+              ) : null}
               <div className="user-box">
                 <input
                   type="text"
@@ -85,7 +85,9 @@ const Contact = () => {
                   name="userName"
                   onChange={(e) => handleChange(e)}
                 />
-                <label>Your Name</label>
+                <label>
+                  Your Name<span>*</span>
+                </label>
               </div>
               <div className="user-box">
                 <input
@@ -94,7 +96,9 @@ const Contact = () => {
                   name="userEmail"
                   onChange={(e) => handleChange(e)}
                 />
-                <label>Your email</label>
+                <label>
+                  Your email<span>*</span>
+                </label>
               </div>
               <div className="user-box">
                 <input
@@ -104,7 +108,9 @@ const Contact = () => {
                   onChange={(e) => handleChange(e)}
                 />
 
-                <label>Subject</label>
+                <label>
+                  Subject<span>*</span>
+                </label>
               </div>
               <div className="user-box">
                 <textarea
@@ -112,7 +118,9 @@ const Contact = () => {
                   name="message"
                   onChange={(e) => handleChange(e)}
                 ></textarea>
-                <label>Message</label>
+                <label>
+                  Message<span>*</span>
+                </label>
               </div>
               <div>
                 <button className="contact__contact-btn">Send Message</button>
@@ -120,10 +128,10 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <Footer />
-
+      
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 export default Contact;

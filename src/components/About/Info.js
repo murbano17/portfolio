@@ -37,7 +37,7 @@ const Info = () => {
         </p>
         <img
           className="about__info-profile-img"
-          src="/img/profile-picture.png"
+          src="/img/profile-picture-min.png"
           alt="profile"
         />
       </div>

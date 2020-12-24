@@ -1,9 +1,15 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
-const Project = ({ index, programs, img, name, description, link }) => {
-
-
+const Project = ({
+  index,
+  programs,
+  img,
+  name,
+  description,
+  link,
+  workWith,
+}) => {
   return (
     <div className="works__each-work">
       <div
@@ -29,7 +35,13 @@ const Project = ({ index, programs, img, name, description, link }) => {
           })}
         </div>
         <p className="works__description ">{description}</p>
-
+        {workWith && (
+          <div className='works__work-with'>
+            <p>
+              work with: <i className="fab fa-github"></i> {workWith}
+            </p>
+          </div>
+        )}
         <div className="base__square-btn ml-10 works__btn">
           <Link to={link} target="_blank">
             <span>

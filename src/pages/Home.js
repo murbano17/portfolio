@@ -5,17 +5,17 @@ const Home = () => {
   return (
     <div className="home__home-container">
       <div className="home__home">
-        <small className="home__home-title">HOME</small>
+        <small className="page__title-small">home</small>
 
         <div className="home__half-grey"></div>
         <div className="home__home-hello ">
-          <h1 className='animate__animated animate__bounceInLeft'>
+          <h1 className="animate__animated animate__bounceInLeft">
             he
             <br />
             llo!
           </h1>
           <div className="home__home-welcome">
-            <p className=' animate__animated animate__pulse'>
+            <p className=" animate__animated animate__pulse">
               my name is Marina. <br /> I'm a ( junior )
               <span> front end developer</span> and
               <span> graphic designer</span> based in Barcelona.
@@ -28,12 +28,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="home__home-social-networks">
+        <div className="home__home-social-networks home-icons">
           <Link to="/github" target="_blank">
-            <i className="fab fa-github"></i>
+            <i className="fab fa-github icon-github"></i>
           </Link>
           <Link to="/linkedin" target="_blank">
-            <i className="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin icon-linkedin"></i>
           </Link>
         </div>
       </div>

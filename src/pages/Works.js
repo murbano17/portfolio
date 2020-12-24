@@ -11,32 +11,34 @@ const Works = () => {
   };
 
   return (
-    <div className="works__container">
-      <small className="home__home-title">WORKS</small>
+    <div className="page__container">
+      <small className="page__title-small">works</small>
       <div className="home__home-social-networks social-fixed">
         <Link to="/github" target="_blank">
-          <i className="fab fa-github"></i>
+          <i className="fab fa-github icon-github"></i>
         </Link>
         <Link to="/linkedin" target="_blank">
-          <i className="fab fa-linkedin"></i>
+          <i className="fab fa-linkedin icon-linkedin"></i>
         </Link>
       </div>
       <button className="works__scroll" onClick={handleScrollToStats}>
         Scroll down
       </button>
 
-      <div className="works__info ">
-        <h1>works.</h1>
-        {projects.map((project, i) => {
-          return (
-            <>
-              <div key={i} ref={bottomRef}>
-                {" "}
-              </div>
-              <Project {...project} {...i} />
-            </>
-          );
-        })}
+      <div className="page__info">
+        <h1 className="animate__animated animate__pulse">works.</h1>
+        <div className="page__info-container">
+          {projects.map((project, i) => {
+            return (
+              <>
+                <div key={i} ref={bottomRef}>
+                  {" "}
+                </div>
+                <Project {...project} {...i} />
+              </>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

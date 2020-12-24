@@ -57,13 +57,3 @@ p {
 .base__square-btn:active {
   transform: scale(0.96);
 }
-
-.home__home-title {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  align-self: flex-start;
-  text-decoration: underline;
-  letter-spacing: 0.2rem;
-  font-size: 0.7rem;
-  margin-left: 10px;
-}

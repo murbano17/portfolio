@@ -12,10 +12,11 @@ export const Navbar = () => {
   return (
     <div>
       <nav className="navbar__navbar-menu">
-    
         <div className="menu-icon" onClick={handleClick}>
           <small>{clicked ? "close" : "menu"}</small>
-          <i className={clicked ? "burger fa fa-times" : "burger fa fa-bars"}></i>
+          <i
+            className={clicked ? "burger fa fa-times" : "burger fa fa-bars"}
+          ></i>
         </div>
         <ul className={clicked ? "navbar__navbar active" : "navbar__navbar"}>
           {MenuItems.map((item, index) => {
@@ -34,12 +35,12 @@ export const Navbar = () => {
           <div className="navbar__links-social-networks">
             <li>
               <Link to="/github" target="_blank">
-                <i className="icon fab fa-github"></i>
+                <i className="icon fab fa-github icon-github"></i>
               </Link>
             </li>
             <li>
               <Link to="/linkedin" target="_blank">
-                <i className="icon fab fa-linkedin"></i>
+                <i className="icon fab fa-linkedin icon-linkedin"></i>
               </Link>
             </li>
           </div>
