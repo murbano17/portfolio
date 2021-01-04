@@ -16,7 +16,7 @@ export const projects = [
     description:
       "Search platform for small local business where you can get information about them. Also you can get in touch with them and save them as your favourite.",
     link: "/localshop",
-    workWith: '/leanloia',
+    workWith: "/leanloia",
   },
   {
     index: 3,
@@ -24,9 +24,8 @@ export const projects = [
     name: "Travel With",
     img: "/img/travelwith-min.png",
     description:
-      "This app is based on the idea of travel group management. Each travel has the detailed information for the travel and for the users that will be assisting. This app allows us to set tasks and see his actual state and which user completed it. You can recive invitations for private travels and decline or join it.",
+      "This app is based on the idea of travel group management. Each travel has the detailed information for the travel and for the users that will be assisting. This app allows us to set tasks and see his actual state.",
     link: "/travelwith",
-    workWith: '/leanloia',
-
+    workWith: "/leanloia",
   },
 ];
