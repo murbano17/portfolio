@@ -16,13 +16,13 @@ const Home = () => {
           </h1>
           <div className="home__home-welcome">
             <p className=" animate__animated animate__pulse">
-              my name is Marina. <br /> I'm a ( junior )
-              <span> front end developer</span> and
+              my name is Marina. <br /> I'm a<span> front end developer</span>{" "}
+              and
               <span> graphic designer</span> based in Barcelona.
             </p>
             <Link className="home__link" to="/works">
               <div className="home__home-btn-works animate__animated animate__pulse">
-                SEE MY WORKS <i className="fa fa-angle-right"></i>
+                view all works <i className="fa fa-angle-right"></i>
               </div>
             </Link>
           </div>

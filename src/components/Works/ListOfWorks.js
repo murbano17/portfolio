@@ -11,7 +11,7 @@ export const projects = [
   {
     index: 2,
     name: "LocalShop",
-    programs: ["Express", "Node", "MongoDB", "Handelbars"],
+    programs: ["Express", "Node", "MongoDB", "Handlebars"],
     img: "/img/localshop-min.png",
     description:
       "Search platform for small local business where you can get information about them. Also you can get in touch with them and save them as your favourite.",

@@ -5,7 +5,6 @@ import About from "../pages/About";
 import Home from "../pages/Home";
 import Works from "../pages/Works";
 import Contact from "../pages/Contact";
-import Prueba from "../pages/Prueba";
 
 const AppRouter = () => {
   return (
@@ -18,7 +17,6 @@ const AppRouter = () => {
           <Route exact path="/about" component={About} />
           <Route exact path="/works" component={Works} />
           <Route exact path="/contact" component={Contact} />
-          <Route exact path="/prueba" component={Prueba} />
 
           <Route
             exact

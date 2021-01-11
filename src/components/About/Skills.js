@@ -31,9 +31,9 @@ const Skills = () => {
         <div className="skills__skills-list">
           <h3>Web Development</h3>
           <ul>
-            {webDevSkills.map((eachSkill, i) => {
+            {webDevSkills.map((eachSkill) => {
               return (
-                <li key={i}>
+                <li key={eachSkill}>
                   <i className="fas fa-angle-right"></i> {eachSkill.name}
                 </li>
               );
@@ -43,9 +43,9 @@ const Skills = () => {
         <div className="skills__skills-list">
           <h3>Graphic Design</h3>
           <ul>
-            {designSkills.map((eachSkill, i) => {
+            {designSkills.map((eachSkill) => {
               return (
-                <li key={i}>
+                <li key={eachSkill}>
                   <i className="fas fa-angle-right"></i> { eachSkill.name}
 
                 </li>

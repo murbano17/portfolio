@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { projects } from "../components/Works/ListOfWorks";
+import { projects } from "../components/Works/listOfWorks";
 import Project from "../components/Works/Project";
 import { Link } from "react-router-dom";
 
@@ -30,12 +30,10 @@ const Works = () => {
         <div className="page__info-container">
           {projects.map((project, i) => {
             return (
-              <>
-                <div key={i} ref={bottomRef}>
-                  {" "}
-                </div>
+              <div key={i}>
+                <div ref={bottomRef}> </div>
                 <Project {...project} {...i} />
-              </>
+              </div>
             );
           })}
         </div>
