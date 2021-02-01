@@ -60,6 +60,14 @@ const AppRouter = () => {
               return null;
             }}
           />
+             <Route
+            exact
+            path="/mixin"
+            component={() => {
+              window.location.href = "https://mixinbeauty.herokuapp.com";
+              return null;
+            }}
+          />
         </Switch>
       </div>
     </Router>

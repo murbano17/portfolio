@@ -28,4 +28,13 @@ export const projects = [
     link: "/travelwith",
     workWith: "/leanloia",
   },
+  {
+    index: 4,
+    programs: ["ReactJS", "Node", "Express", "MongoDB", "Stripe"],
+    name: "Mixin",
+    img: "/img/mixin-min.png",
+    description:
+      "Beauty e-commerce. The user can see the list of products, add them to the cart and pay.",
+    link: "/mixin",
+  },
 ];
